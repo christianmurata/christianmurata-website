@@ -1,9 +1,15 @@
+
+
+import { ChakraProvider, Box, Heading } from "@chakra-ui/react";
+
 function App() {
 	return (
-		<div className="App">
-			<h1>Christian Murata Website</h1>
-		</div>
-	);
+		<ChakraProvider>
+			<Box>
+				<Heading>Hello from chakra-ui</Heading>
+			</Box>
+		</ChakraProvider>
+	)
 }
 
 export default App;

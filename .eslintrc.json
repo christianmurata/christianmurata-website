@@ -1,0 +1,21 @@
+{
+	"ignorePatterns": ["*.test.js", "*.test.tsx"],
+	"rules": {
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"react/react-in-jsx-scope": "off"
+	},
+    "extends": [
+        "prettier"
+    ],
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    }
+}

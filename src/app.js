@@ -1,15 +1,16 @@
+import { ChakraProvider, Box, Heading } from '@chakra-ui/react';
 
-
-import { ChakraProvider, Box, Heading } from "@chakra-ui/react";
+import Navbar from './components/navbar';
+import theme from './libs/theme';
 
 function App() {
 	return (
-		<ChakraProvider>
+		<ChakraProvider theme={theme}>
 			<Box>
-				<Heading>Hello from chakra-ui</Heading>
+				<Navbar />
 			</Box>
 		</ChakraProvider>
-	)
+	);
 }
 
 export default App;

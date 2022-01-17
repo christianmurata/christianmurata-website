@@ -11,7 +11,7 @@ const Navbar = (props) => {
       w='100%'
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
-      bg={useColorModeValue('#53616240', '#32323280')}
+      bg={useColorModeValue('#ffffff80', '#32323280')}
     >
       <Container align={'center'} maxW={'container.md'}>
         <Box px={4}>

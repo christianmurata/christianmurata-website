@@ -3,12 +3,13 @@ import { Badge, Box, Container, Flex, Heading, Image, Text, VStack, useColorMode
 
 import Card from "../components/card";
 import Page from "../components/page";
+import Rubiks from "../components/rubiks";
 import { formacoes } from "../data/infos";
 
 const Home = () => {
   return (
     <Page>
-      <Container w='100%'>
+      <Container>
         <Box
           p='3'
           borderRadius='lg'
@@ -65,33 +66,33 @@ const Home = () => {
           </Flex>
         </Box>
 
-        <Box>
+        <Box p='3'>
           <Heading variant='section-title'>Sobre Mim</Heading>
 
           <Text align='justify'>
-            Hey! Eu sou um desenvolvedor freelance atualmente estudando engenharia 
-            de computação e morando em Cornélio Procópio, no Paraná 🇧🇷. Sou um 
-            grande apreciador de Fifa, cubos mágicos e esportes.
+            Hey! Eu sou um desenvolvedor freelance atualmente estudando engenharia
+            de computação e morando em Cornélio Procópio, no Paraná 🇧🇷. Sou um
+            grande apreciador de Fifa, cubos mágicos, futebol e esportes americanos.
           </Text>
         </Box>
 
-        <Box>
+        <Box p='3'>
           <Heading variant='section-title'>Formação</Heading>
 
           <VStack spacing='2'>
             {formacoes.map(formacao => (
-                <Card 
+              <Card
                 title={formacao.title}
                 desc={formacao.desc}
                 period={formacao.period}
               />
             ))}
           </VStack>
-          
+
         </Box>
       </Container>
     </Page>
   );
 }
 
-  export default Home;
+export default Home;

@@ -3,7 +3,7 @@ import { Badge, Box, Container, Flex, Heading, Image, Text, VStack, useColorMode
 
 import Card from "../components/card";
 import Page from "../components/page";
-import { formacoes } from "../data/infos";
+import { formacoes, badges } from "../data/infos";
 
 const Home = () => {
   return (
@@ -42,21 +42,12 @@ const Home = () => {
               <Text fontSize='sm' ml={1}>
                 Desenvolvedor
 
-                <Badge ml='1' p='1' colorScheme='blue'>
-                  PHP
-                </Badge>
-                <Badge ml='1' p='1' colorScheme='red'>
-                  LARAVEL
-                </Badge>
-                <Badge ml='1' p='1' colorScheme='yellow'>
-                  JS
-                </Badge>
-                <Badge ml='1' p='1' colorScheme='green'>
-                  Node
-                </Badge>
-                <Badge ml='1' p='1' colorScheme='orange'>
-                  Java
-                </Badge>
+                {badges.map(badge => (
+                  <Badge key={badge.id} colorScheme={badge.color} ml='1' p='1'>
+                    {badge.desc}
+                  </Badge>
+                ))}
+
                 <Badge ml='1' p='1'>
                   <AddIcon />
                 </Badge>
@@ -81,6 +72,7 @@ const Home = () => {
           <VStack spacing='2'>
             {formacoes.map(formacao => (
               <Card
+                key={formacao.id}
                 title={formacao.title}
                 desc={formacao.desc}
                 period={formacao.period}

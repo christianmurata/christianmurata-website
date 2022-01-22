@@ -3,7 +3,6 @@ import { Badge, Box, Container, Flex, Heading, Image, Text, VStack, useColorMode
 
 import Card from "../components/card";
 import Page from "../components/page";
-import Rubiks from "../components/rubiks";
 import { formacoes } from "../data/infos";
 
 const Home = () => {
@@ -43,22 +42,22 @@ const Home = () => {
               <Text fontSize='sm' ml={1}>
                 Desenvolvedor
 
-                <Badge ml='1' colorScheme='blue'>
+                <Badge ml='1' p='1' colorScheme='blue'>
                   PHP
                 </Badge>
-                <Badge ml='1' colorScheme='red'>
+                <Badge ml='1' p='1' colorScheme='red'>
                   LARAVEL
                 </Badge>
-                <Badge ml='1' colorScheme='yellow'>
+                <Badge ml='1' p='1' colorScheme='yellow'>
                   JS
                 </Badge>
-                <Badge ml='1' colorScheme='green'>
+                <Badge ml='1' p='1' colorScheme='green'>
                   Node
                 </Badge>
-                <Badge ml='1' colorScheme='orange'>
+                <Badge ml='1' p='1' colorScheme='orange'>
                   Java
                 </Badge>
-                <Badge ml='1'>
+                <Badge ml='1' p='1'>
                   <AddIcon />
                 </Badge>
               </Text>

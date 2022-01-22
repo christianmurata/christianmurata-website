@@ -2,7 +2,7 @@ import { Box, Container, Flex, Heading, Image, Stack, Text, useColorModeValue } 
 
 const Card = ({ title, desc, period }) => {
   return (
-    <Box 
+    <Box
       px={4}
       py={5}
       w={'full'}

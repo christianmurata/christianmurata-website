@@ -2,11 +2,11 @@ import { Box, Button, Container, Flex, Image, Stack, Text, useColorMode, useColo
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 const Navbar = (props) => {
-	const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
 
-	return (
-		<Box
-      position='fixed'
+  return (
+    <Box
+      position='relative'
       as='nav'
       w='100%'
       css={{ backdropFilter: 'blur(10px)' }}
@@ -20,15 +20,15 @@ const Navbar = (props) => {
             alignItems={'center'}
             justifyContent={'space-between'}
           >
-            
+
             <Flex
               alignItems={'center'}
               justifyContent={'start'}
             >
-              <Image 
-                src='/images/rubiks.png' 
+              <Image
+                src='/images/rubiks.png'
                 alt='logo'
-                width={5} 
+                width={5}
                 height={5}
               />
               <Text fontWeight='bold' ml='1'>
@@ -46,8 +46,8 @@ const Navbar = (props) => {
           </Flex>
         </Box>
       </Container>
-		</Box>
-	);
+    </Box>
+  );
 };
 
 export default Navbar;

@@ -86,9 +86,9 @@ const Home = () => {
           <Heading variant='section-title'>Formação</Heading>
 
           <VStack spacing='2'>
-            {experiences.map(experience => (
+            {experiences.map((experience, index) => (
               <Card
-                key={experience.id}
+                key={index}
                 title={experience.title}
                 desc={experience.desc}
                 period={experience.period}

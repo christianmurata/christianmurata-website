@@ -3,7 +3,7 @@ import { Badge, Box, Container, Flex, Heading, Image, Text, VStack, useColorMode
 
 import Card from "../components/card";
 import Page from "../components/page";
-import { formacoes, badges } from "../data/infos";
+import { educations, badges, experiences } from "../data/infos";
 
 const Home = () => {
   return (
@@ -42,8 +42,8 @@ const Home = () => {
               <Text fontSize='sm' ml={1}>
                 Desenvolvedor
 
-                {badges.map(badge => (
-                  <Badge key={badge.id} colorScheme={badge.color} ml='1' p='1'>
+                {badges.map((badge, index) => (
+                  <Badge key={index} colorScheme={badge.color} ml='1' p='1'>
                     {badge.desc}
                   </Badge>
                 ))}
@@ -67,15 +67,31 @@ const Home = () => {
         </Box>
 
         <Box p='3'>
+          <Heading variant='section-title'>Experiência</Heading>
+
+          <VStack spacing='2'>
+            {educations.map((education, index) => (
+              <Card
+                key={index}
+                title={education.title}
+                desc={education.desc}
+                period={education.period}
+              />
+            ))}
+          </VStack>
+
+        </Box>
+
+        <Box p='3'>
           <Heading variant='section-title'>Formação</Heading>
 
           <VStack spacing='2'>
-            {formacoes.map(formacao => (
+            {experiences.map(experience => (
               <Card
-                key={formacao.id}
-                title={formacao.title}
-                desc={formacao.desc}
-                period={formacao.period}
+                key={experience.id}
+                title={experience.title}
+                desc={experience.desc}
+                period={experience.period}
               />
             ))}
           </VStack>

@@ -28,6 +28,30 @@ const components = {
       })
     }
   },
+  Link: {
+    variants: {
+      'link-item': props => ({
+        _hover: {
+          textDecoration: 'underline',
+          textUnderlineOffset: 4,
+          textDecorationColor: mode('#C06014', '#14FFEC')(props),
+          textDecorationThickness: 4
+        }
+      }),
+      'link-item-active': props => ({
+        textDecoration: 'underline',
+        textUnderlineOffset: 4,
+        textDecorationColor: mode('#C06014', '#14FFEC')(props),
+        textDecorationThickness: 4,
+        _hover: {
+          textDecoration: 'underline',
+          textUnderlineOffset: 4,
+          textDecorationColor: mode('#C06014', '#14FFEC')(props),
+          textDecorationThickness: 4
+        }
+      })
+    }
+  },
 };
 
 const theme = extendTheme({ config, styles, components });

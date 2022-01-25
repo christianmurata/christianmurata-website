@@ -1,14 +1,15 @@
-import { ChakraProvider, Box, Heading } from '@chakra-ui/react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChakraProvider, Box } from '@chakra-ui/react';
 
 import theme from './libs/theme';
-import Home from './pages/home';
+import Navigation from './navigation';
 
 function App() {
 	return (
 		<ChakraProvider theme={theme}>
-			<Box>
-				<Home />				
-			</Box>
+			<AnimatePresence exitBeforeEnter initial={true}>
+				<Navigation />
+			</AnimatePresence>
 		</ChakraProvider>
 	);
 }

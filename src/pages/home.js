@@ -1,9 +1,9 @@
-import { AddIcon } from "@chakra-ui/icons";
-import { Badge, Box, Container, Flex, Heading, Image, Text, VStack, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { AddIcon } from '@chakra-ui/icons';
+import { Badge, Box, Container, Flex, Heading, Image, Text, VStack, useColorModeValue } from '@chakra-ui/react';
 
-import Card from "../components/card";
-import Page from "../components/page";
-import { educations, badges, experiences } from "../data/infos";
+import Card from '../components/card';
+import Page from '../components/page';
+import { educations, badges, experiences } from '../data/infos';
 
 const Home = () => {
   return (
@@ -62,7 +62,7 @@ const Home = () => {
           <Text align='justify'>
             Hey! Eu sou um desenvolvedor freelance atualmente estudando engenharia
             de computação e morando em Cornélio Procópio, no Paraná 🇧🇷. Sou um
-            grande apreciador de Fifa, cubos mágicos, futebol e esportes americanos.
+            grande apreciador de cubos mágicos, futebol, Fifa e esportes americanos.
           </Text>
         </Box>
 

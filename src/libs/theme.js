@@ -1,5 +1,5 @@
-import { extendTheme } from "@chakra-ui/react"
-import { mode } from "@chakra-ui/theme-tools";
+import { extendTheme } from '@chakra-ui/react'
+import { mode } from '@chakra-ui/theme-tools';
 
 const config = {
   initialColorMode: 'dark',
@@ -17,7 +17,7 @@ const styles = {
 const components = {
   Heading: {
     variants: {
-      'section-title': props =>  ({
+      'section-title': props => ({
         textDecoration: 'underline',
         fontSize: 20,
         textUnderlineOffset: 6,

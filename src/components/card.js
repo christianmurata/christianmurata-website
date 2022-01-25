@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Image, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Image, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 
 const Card = ({ title, desc, period }) => {
   return (

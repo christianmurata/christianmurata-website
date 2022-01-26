@@ -9,7 +9,7 @@ export const socials = [
     icon: <FaGithub />
   },
   {
-    url: "https://www.linkedin.com/in/christian-murata-222a4915a",
+    url: "https://www.linkedin.com/in/christianmurata",
     label: "Linkedin Account",
     type: "linkedin",
     icon: <FaLinkedin />

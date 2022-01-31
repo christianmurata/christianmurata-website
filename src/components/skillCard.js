@@ -3,7 +3,6 @@ import { Box, HStack, Image, Text, useColorModeValue, VStack } from '@chakra-ui/
 const capitalize = desc => desc[0].toUpperCase() + desc.slice(1);
 
 const SkillCard = ({ skill, desc, color, image }) => {
-
   return (
     <Box>
       <HStack

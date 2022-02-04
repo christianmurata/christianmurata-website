@@ -1,6 +1,7 @@
 import { Link as NavLink, useLocation } from 'react-router-dom';
-import { Box, Button, Container, Flex, Image, Link, Stack, Text, useColorMode, useColorModeValue } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { Box, Button, Container, Flex, IconButton, Image, Link, Menu, MenuButton, MenuItem, MenuList, Stack, Text, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { FaGithub } from 'react-icons/fa';
 
 const LinkHome = () => {
   return (
@@ -37,6 +38,7 @@ const LinkItem = ({ to, path, children }) => {
       to={to}
       ml='2'
       variant={(to === path) ? 'link-item-active' : 'link-item'}
+      display={{ base: 'none', md: 'flex' }}
       _focus={{ border: 'none' }}
       _active={{ border: 'none' }}
       _activeLink={{ borderColor: 'blue' }}
@@ -80,15 +82,60 @@ const Navbar = () => {
             </Flex>
 
             <Flex alignItems={'center'}>
-              <Stack direction={'row'} spacing={7}>
+              <Stack direction={'row'} spacing={1} display={{ base: 'none', md: 'flex' }}>
+                <Link
+                  href='https://github.com/christianmurata/christianmurata-website'
+                  isExternal
+                >
+                  <IconButton icon={<FaGithub />} bg='transparent' />
+                </Link>
+              </Stack>
+
+              <Stack direction={'row'} spacing={1} ml={1}>
                 <Button onClick={toggleColorMode}>
                   {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                 </Button>
               </Stack>
+
+              <Stack
+                direction={'row'}
+                spacing={1}
+                ml={1}
+                display={{ base: 'block', md: 'none' }}
+              >
+                <Menu>
+                  <MenuButton
+                    as={IconButton}
+                    aria-label='Options'
+                    icon={<HamburgerIcon />}
+                    variant='outline'
+                  />
+                  <MenuList bg={useColorModeValue('#ffffff', '#323232')}>
+                    <Link as={NavLink} to='/stack'>
+                      <MenuItem>
+                        Stack
+                      </MenuItem>
+                    </Link>
+                    <Link as={NavLink} to='/portfolio'>
+                      <MenuItem>
+                        Portfólio
+                      </MenuItem>
+                    </Link>
+                    <Link
+                      href='https://github.com/christianmurata/christianmurata-website'
+                      isExternal
+                    >
+                      <MenuItem>
+                        Código Fonte
+                      </MenuItem>
+                    </Link>
+                  </MenuList>
+                </Menu>
+              </Stack>
             </Flex>
           </Flex>
         </Box>
-      </Container >
+      </Container>
     </Box >
   );
 };

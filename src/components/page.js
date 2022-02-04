@@ -18,7 +18,7 @@ const Page = ({ children }) => {
       style={{ position: 'relative' }}
     >
       <>
-        <Container position={'relative'} pt={'1rem'} maxW={'cotainer.md'} zIndex={1}>
+        <Container position={'relative'} pt={'1rem'} w='100%' maxW={'cotainer.md'} zIndex={1}>
           {children}
         </Container>
       </>

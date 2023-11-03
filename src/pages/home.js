@@ -4,7 +4,7 @@ import { Badge, Box, Container, Flex, Heading, Image, Text, VStack, useColorMode
 import Card from '../components/card';
 import Page from '../components/page';
 import Section from '../components/section';
-import { educations, badges, experiences } from '../data/infos';
+import { title, about, educations, badges, experiences, activities } from '../data/infos';
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
             mb='6'
             bg={useColorModeValue('#ffffff', '#323232')}
           >
-            <h1>Dev full-stack e um fanático por puzzles nas horas vagas!</h1>
+            <h1>{title}</h1>
           </Box>
 
           <Box display={{ md: 'flex' }}>
@@ -64,9 +64,7 @@ const Home = () => {
             <Heading variant='section-title'>Sobre Mim</Heading>
 
             <Text align='justify'>
-              Hey! Eu sou um desenvolvedor freelance atualmente estudando engenharia
-              de computação e morando em Cornélio Procópio, no Paraná 🇧🇷. Sou um
-              grande apreciador de cubos mágicos, futebol, Fifa e esportes americanos.
+              {about}
             </Text>
           </Box>
         </Section>
@@ -76,12 +74,28 @@ const Home = () => {
             <Heading variant='section-title'>Experiência</Heading>
 
             <VStack spacing='2'>
-              {educations.map((education, index) => (
+              {experiences.map((experience, index) => (
                 <Card
                   key={index}
-                  title={education.title}
-                  desc={education.desc}
-                  period={education.period}
+                  title={experience.title}
+                  desc={experience.desc}
+                  period={experience.period}
+                />
+              ))}
+            </VStack>
+
+          </Box>
+
+          <Box p='3'>
+            <Heading variant='section-title'>Atividades</Heading>
+
+            <VStack spacing='2'>
+              {activities.map((activity, index) => (
+                <Card
+                  key={index}
+                  title={activity.title}
+                  desc={activity.desc}
+                  period={activity.period}
                 />
               ))}
             </VStack>
@@ -92,12 +106,12 @@ const Home = () => {
             <Heading variant='section-title'>Formação</Heading>
 
             <VStack spacing='2'>
-              {experiences.map((experience, index) => (
+              {educations.map((education, index) => (
                 <Card
                   key={index}
-                  title={experience.title}
-                  desc={experience.desc}
-                  period={experience.period}
+                  title={education.title}
+                  desc={education.desc}
+                  period={education.period}
                 />
               ))}
             </VStack>

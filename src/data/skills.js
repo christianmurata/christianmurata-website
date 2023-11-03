@@ -6,6 +6,27 @@
 
 export const skills = [
   {
+    'skill': 'C#',
+    'desc': 'backend',
+    'filter': 'backend',
+    'color': 'purple',
+    'image': '/images/csharp.png'
+  },
+  {
+    'skill': 'SQL Server',
+    'desc': 'database',
+    'filter': 'backend',
+    'color': 'orange',
+    'image': '/images/sqlserver.png'
+  },
+  {
+    'skill': 'Javascript',
+    'desc': 'frontend',
+    'filter': 'frontend',
+    'color': 'yellow',
+    'image': '/images/js.png'
+  },
+  {
     'skill': 'PHP',
     'desc': 'backend',
     'filter': 'backend',
@@ -13,32 +34,11 @@ export const skills = [
     'image': '/images/php.png'
   },
   {
-    'skill': 'Java',
-    'desc': 'backend',
-    'filter': 'backend',
-    'color': 'orange',
-    'image': '/images/java.png'
-  },
-  {
-    'skill': 'Javascript',
-    'desc': 'frontend, backend',
-    'filter': 'frontend',
-    'color': 'yellow',
-    'image': '/images/js.png'
-  },
-  {
     'skill': 'Node.js',
     'desc': 'backend',
     'filter': 'backend',
     'color': 'green',
     'image': '/images/node.png'
-  },
-  {
-    'skill': 'Spring',
-    'desc': 'framework',
-    'filter': 'backend',
-    'color': 'green',
-    'image': '/images/spring.png'
   },
   {
     'skill': 'Laravel',
@@ -160,6 +160,13 @@ export const skills = [
     'image': '/images/apache.png'
   },
   {
+    'skill': 'Azure',
+    'desc': 'devops',
+    'filter': 'devops',
+    'color': 'blue',
+    'image': '/images/azure.png'
+  },
+  {
     'skill': 'Heroku',
     'desc': 'devops',
     'filter': 'devops',
@@ -172,19 +179,5 @@ export const skills = [
     'filter': 'devops',
     'color': 'black',
     'image': '/images/vercel.png'
-  },
-  {
-    'skill': 'Digital Ocean',
-    'desc': 'devops',
-    'filter': 'devops',
-    'color': 'blue',
-    'image': '/images/digital.png'
-  },
-  {
-    'skill': 'Firebase',
-    'desc': 'devops',
-    'filter': 'devops',
-    'color': 'orange',
-    'image': '/images/firebase.png'
-  },
+  }
 ]

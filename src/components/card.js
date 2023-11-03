@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Image, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 
 const Card = ({ title, desc, period }) => {
   return (
@@ -11,7 +11,7 @@ const Card = ({ title, desc, period }) => {
       bg={useColorModeValue('#ffffff', '#323232')}
     >
       <Flex justifyContent='space-between'>
-        <Flex>
+        <Flex maxW={['100%', '100%', '80%', '80%']}>
           <Stack spacing={2} align='left'>
             <Heading
               align='left'
@@ -20,18 +20,20 @@ const Card = ({ title, desc, period }) => {
               {title}
             </Heading>
             <Heading
-              align='left'
+              align='justify'
               fontSize='sm'
             >
               {desc}
             </Heading>
           </Stack>
         </Flex>
-        <Stack display={['none', 'none', 'flex', 'flex']}>
-          <Text fontSize={14}>
-            {period}
-          </Text>
-        </Stack>
+        <Flex>
+          <Stack display={['none', 'none', 'inline', 'inline']}>
+            <Text fontSize={14}>
+              {period}
+            </Text>
+          </Stack>
+        </Flex>
       </Flex>
     </Box>
   );

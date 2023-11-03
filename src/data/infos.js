@@ -1,36 +1,40 @@
+export const title = "Dev full stack e um fanático por puzzles nas horas vagas!";
+
+export const about = "Olá! Sou um desenvolvedor full stack C# e Angular. Com um forte background em PHP. Atualmente estou trabalhando e morando em Cornélio Procópio, Paraná 🇧🇷. Sou um grande apreciador de cubos mágicos, futebol, Fifa e esportes americanos.";
+
 export const badges = [
   {
-    "desc": "PHP",
+    "desc": "C#",
     "color": "blue"
   },
   {
-    "desc": "LARAVEL",
+    "desc": "ANGULAR",
     "color": "red"
+  },
+  {
+    "desc": "PHP",
+    "color": "blue"
   },
   {
     "desc": "JS",
     "color": "yellow"
   },
   {
-    "desc": "Node",
-    "color": "green"
-  },
-  {
-    "desc": "Java",
+    "desc": "SQL Server",
     "color": "orange"
   }
 ];
 
-export const educations = [
+export const experiences = [
   {
-    "title": "Unect Jr.",
-    "desc": "Assessor de projetos",
-    "period": "2021 - Presente"
+    "title": "Forlogic Software",
+    "desc": "Desenvolvedor full stack",
+    "period": "2022 - Presente"
   },
   {
     "title": "Freelancer",
-    "desc": "Desenvolvedor full-stack",
-    "period": "2018 - Presente"
+    "desc": "Desenvolvedor full stack",
+    "period": "2018 - 2022"
   },
   {
     "title": "JURID TI",
@@ -39,7 +43,21 @@ export const educations = [
   }
 ];
 
-export const experiences = [
+export const activities = [
+  {
+    "title": "Unect Jr. - Empresa júnior",
+    "desc": "Assessor de projetos",
+    "period": "2021 - 2023"
+  },
+  {
+    "title": "UTFPR - Projeto de extensão",
+    "type": "Projeto de extenção",
+    "desc": "Desenvolvimento de Aplicativos para coleta e Análise de dados da Tecnologia de Manejo Integrado de Pragas da Cultura de Soja",
+    "period": "2022 - 2022"
+  }
+];
+
+export const educations = [
   {
     "title": "UTFPR - Campus Cornélio Procópio",
     "desc": "Engenharia de computação",

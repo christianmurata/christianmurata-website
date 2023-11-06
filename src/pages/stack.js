@@ -1,8 +1,7 @@
 import { Container, Tabs, TabList, TabPanels, TabPanel, SimpleGrid } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import { AiTwotoneThunderbolt, AiOutlineCloudServer } from 'react-icons/ai';
+import { AiTwotoneThunderbolt, AiOutlineCloudServer, AiOutlineApi } from 'react-icons/ai';
 import { BiDesktop } from 'react-icons/bi';
-import { GiSpiderWeb } from 'react-icons/gi';
 
 import Page from '../components/page';
 import Section from '../components/section';
@@ -37,7 +36,7 @@ const Stack = () => {
             <TabList display='flex' flexWrap='wrap' justifyContent='center'>
               <TabTitle text='All' icon={AiTwotoneThunderbolt} filter={''} />
               <TabTitle text='Frontend' icon={BiDesktop} filter={'frontend'} />
-              <TabTitle text='Backend' icon={GiSpiderWeb} filter={'backend'} />
+              <TabTitle text='Backend' icon={AiOutlineApi} filter={'backend'} />
               <TabTitle text='Devops' icon={AiOutlineCloudServer} filter={'devops'} />
             </TabList>
 

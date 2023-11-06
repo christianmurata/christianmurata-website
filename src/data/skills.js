@@ -20,11 +20,11 @@ export const skills = [
     'image': '/images/sqlserver.png'
   },
   {
-    'skill': 'Javascript',
+    'skill': 'Angular',
     'desc': 'frontend',
     'filter': 'frontend',
-    'color': 'yellow',
-    'image': '/images/js.png'
+    'color': 'red',
+    'image': '/images/angular.png'
   },
   {
     'skill': 'PHP',
@@ -39,6 +39,13 @@ export const skills = [
     'filter': 'backend',
     'color': 'green',
     'image': '/images/node.png'
+  },
+  {
+    'skill': 'Javascript',
+    'desc': 'frontend',
+    'filter': 'frontend',
+    'color': 'yellow',
+    'image': '/images/js.png'
   },
   {
     'skill': 'Laravel',
